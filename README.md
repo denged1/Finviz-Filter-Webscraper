@@ -1,12 +1,13 @@
 # Finviz-Filter-Webscraper
-Python code that webscrapes the tickers off any finviz filter url
+Python code to webscrape the tickers off any finviz filter url using Selenium.
 <br>
 <br>
-If you've ever used the filters/screeners on finviz.com, you would know that they are incredibly powerful giving many different customization options, such as filtering by insider ownership, operating margins, analyst recomendations, and P/E; just to name a few. If you haven't tried it out I would honest recommend you play around with it. It's seriously pretty cool; all the filter options can be customized in this url.
+<br>
+If you've ever used the filters/screeners on finviz.com, you would know that they are incredibly powerful giving many different customization options, such as filtering by insider ownership, operating margins, analyst recomendations, and P/E; just to name a few. If you haven't tried it out I would honest recommend playing around with it. It's honestly pretty cool; all the filter options can be customized in this url.
 https://finviz.com/screener.ashx?v=111&ft=4
 
 
-To utilize this code you must first install Selenium using ```pip install selenium```. Additionally you need to have the chrome browser installed and have the chrome webdriver downloaded. You can download the chrome webdriver here https://chromedriver.chromium.org/downloads, pay attention to see if the chrome webdriver you are downloading supports your version of chrome. If you aren't sure how to check your chrome version here are some instructions to do so. https://www.lifewire.com/check-version-of-chrome-5222040
+To utilize this code you first need to install Selenium using ```pip install selenium```. Additionally you need to have the chrome browser installed and have the chrome webdriver downloaded. You can download the chrome webdriver here https://chromedriver.chromium.org/downloads, pay attention to see if the chrome webdriver you are downloading supports your version of chrome. If you aren't sure how to check your chrome version here are some instructions to do so. https://www.lifewire.com/check-version-of-chrome-5222040
 
 Finally, just copy paste the url of your customized filter into the string ```myURL``` and run the code. From there it prints the tickers, but you can customize the code to store the tickers on a csv, plug them into a trading algo, etc. The worlds your oyster!
 
@@ -24,10 +25,12 @@ In contrast, Selenium actually runs the JavaScript code, so it can interact with
 
 <br>
 <br>
+<br>
 I would really appreciate it if anyone who knows how to optimize this code further could open an issue and ping me or something.
 The full code can be found below or in file format in the repository. 
 I hope this was helpful!
-
+<br>
+<br>
 ```python
 from selenium.webdriver.common.by import By
 from selenium import webdriver
