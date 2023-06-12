@@ -31,6 +31,7 @@ The full code can be found below or in file format in the repository.
 I hope this was helpful!
 <br>
 <br>
+
 ```python
 from selenium.webdriver.common.by import By
 from selenium import webdriver
